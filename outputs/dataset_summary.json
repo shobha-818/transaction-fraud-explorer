@@ -1,0 +1,407 @@
+{
+  "transactions": {
+    "rows": 200000,
+    "cols": 11,
+    "columns": {
+      "Transaction_ID": "int32",
+      "Account_ID": "int16",
+      "Merchant_ID": "int16",
+      "Timestamp": "datetime64[ns, UTC]",
+      "Amount": "float64",
+      "Currency": "category",
+      "Payment_Method": "category",
+      "IP_Address": "object",
+      "Location": "category",
+      "Status": "category",
+      "Is_Fraud": "int8"
+    },
+    "null_pct": {
+      "Transaction_ID": 0.0,
+      "Account_ID": 0.0,
+      "Merchant_ID": 0.0,
+      "Timestamp": 0.0,
+      "Amount": 0.0,
+      "Currency": 0.0,
+      "Payment_Method": 0.0,
+      "IP_Address": 0.0,
+      "Location": 0.0,
+      "Status": 0.0
+    },
+    "sample": [
+      {
+        "Transaction_ID": 1,
+        "Account_ID": 10748,
+        "Merchant_ID": 3077,
+        "Timestamp": "2024-02-29 09:08:06.930918+00:00",
+        "Amount": 86118.29,
+        "Currency": "INR",
+        "Payment_Method": "Wallet",
+        "IP_Address": "213.86.238.163",
+        "Location": "Port Karenside",
+        "Status": "Failed",
+        "Is_Fraud": 0
+      },
+      {
+        "Transaction_ID": 2,
+        "Account_ID": 18456,
+        "Merchant_ID": 4651,
+        "Timestamp": "2024-11-07 02:06:24.236974+00:00",
+        "Amount": 34660.77,
+        "Currency": "INR",
+        "Payment_Method": "Wallet",
+        "IP_Address": "29.98.105.88",
+        "Location": "East Karen",
+        "Status": "Failed",
+        "Is_Fraud": 0
+      },
+      {
+        "Transaction_ID": 3,
+        "Account_ID": 15538,
+        "Merchant_ID": 4792,
+        "Timestamp": "2024-01-09 21:09:04.150610+00:00",
+        "Amount": 92863.81,
+        "Currency": "USD",
+        "Payment_Method": "UPI",
+        "IP_Address": "124.81.137.108",
+        "Location": "South Geraldhaven",
+        "Status": "Success",
+        "Is_Fraud": 1
+      }
+    ]
+  },
+  "bank_transactions": {
+    "rows": 2512,
+    "cols": 16,
+    "columns": {
+      "TransactionID": "object",
+      "AccountID": "category",
+      "TransactionAmount": "float32",
+      "TransactionDate": "datetime64[ns, UTC]",
+      "TransactionType": "category",
+      "Location": "category",
+      "DeviceID": "category",
+      "IP Address": "category",
+      "MerchantID": "category",
+      "Channel": "category",
+      "CustomerAge": "int8",
+      "CustomerOccupation": "category",
+      "TransactionDuration": "int16",
+      "LoginAttempts": "int8",
+      "AccountBalance": "float32",
+      "PreviousTransactionDate": "datetime64[ns, UTC]"
+    },
+    "null_pct": {
+      "TransactionID": 0.0,
+      "AccountID": 0.0,
+      "TransactionAmount": 0.0,
+      "TransactionDate": 0.0,
+      "TransactionType": 0.0,
+      "Location": 0.0,
+      "DeviceID": 0.0,
+      "IP Address": 0.0,
+      "MerchantID": 0.0,
+      "Channel": 0.0
+    },
+    "sample": [
+      {
+        "TransactionID": "TX000001",
+        "AccountID": "AC00128",
+        "TransactionAmount": 14.09000015258789,
+        "TransactionDate": "2023-04-11 16:29:00+00:00",
+        "TransactionType": "Debit",
+        "Location": "San Diego",
+        "DeviceID": "D000380",
+        "IP Address": "162.198.218.92",
+        "MerchantID": "M015",
+        "Channel": "ATM",
+        "CustomerAge": 70,
+        "CustomerOccupation": "Doctor",
+        "TransactionDuration": 81,
+        "LoginAttempts": 1,
+        "AccountBalance": 5112.2099609375,
+        "PreviousTransactionDate": "2024-11-04 08:08:00+00:00"
+      },
+      {
+        "TransactionID": "TX000002",
+        "AccountID": "AC00455",
+        "TransactionAmount": 376.239990234375,
+        "TransactionDate": "2023-06-27 16:44:00+00:00",
+        "TransactionType": "Debit",
+        "Location": "Houston",
+        "DeviceID": "D000051",
+        "IP Address": "13.149.61.4",
+        "MerchantID": "M052",
+        "Channel": "ATM",
+        "CustomerAge": 68,
+        "CustomerOccupation": "Doctor",
+        "TransactionDuration": 141,
+        "LoginAttempts": 1,
+        "AccountBalance": 13758.91015625,
+        "PreviousTransactionDate": "2024-11-04 08:09:00+00:00"
+      },
+      {
+        "TransactionID": "TX000003",
+        "AccountID": "AC00019",
+        "TransactionAmount": 126.29000091552734,
+        "TransactionDate": "2023-07-10 18:16:00+00:00",
+        "TransactionType": "Debit",
+        "Location": "Mesa",
+        "DeviceID": "D000235",
+        "IP Address": "215.97.143.157",
+        "MerchantID": "M009",
+        "Channel": "Online",
+        "CustomerAge": 19,
+        "CustomerOccupation": "Student",
+        "TransactionDuration": 56,
+        "LoginAttempts": 1,
+        "AccountBalance": 1122.3499755859375,
+        "PreviousTransactionDate": "2024-11-04 08:07:00+00:00"
+      }
+    ]
+  },
+  "users": {
+    "rows": 10000,
+    "cols": 8,
+    "columns": {
+      "User_ID": "int16",
+      "Name": "object",
+      "Age": "int8",
+      "Gender": "category",
+      "Country": "category",
+      "Account_Created": "category",
+      "KYC_Status": "category",
+      "Risk_Flag": "category"
+    },
+    "null_pct": {
+      "User_ID": 0.0,
+      "Name": 0.0,
+      "Age": 0.0,
+      "Gender": 0.0,
+      "Country": 0.0,
+      "Account_Created": 0.0,
+      "KYC_Status": 0.0,
+      "Risk_Flag": 0.0
+    },
+    "sample": [
+      {
+        "User_ID": 1,
+        "Name": "Allison Hill",
+        "Age": 58,
+        "Gender": "Male",
+        "Country": "Czech Republic",
+        "Account_Created": "2017-02-13",
+        "KYC_Status": "Verified",
+        "Risk_Flag": "High"
+      },
+      {
+        "User_ID": 2,
+        "Name": "Patrick Gardner",
+        "Age": 35,
+        "Gender": "Male",
+        "Country": "Nauru",
+        "Account_Created": "2019-12-12",
+        "KYC_Status": "Verified",
+        "Risk_Flag": "Low"
+      },
+      {
+        "User_ID": 3,
+        "Name": "Daniel Wagner",
+        "Age": 65,
+        "Gender": "Male",
+        "Country": "Anguilla",
+        "Account_Created": "2021-05-04",
+        "KYC_Status": "Verified",
+        "Risk_Flag": "High"
+      }
+    ]
+  },
+  "accounts": {
+    "rows": 19997,
+    "cols": 6,
+    "columns": {
+      "Account_ID": "int16",
+      "User_ID": "int16",
+      "Account_Type": "category",
+      "Balance": "float64",
+      "Currency": "category",
+      "Status": "category"
+    },
+    "null_pct": {
+      "Account_ID": 0.0,
+      "User_ID": 0.0,
+      "Account_Type": 0.0,
+      "Balance": 0.0,
+      "Currency": 0.0,
+      "Status": 0.0
+    },
+    "sample": [
+      {
+        "Account_ID": 1,
+        "User_ID": 1,
+        "Account_Type": "Wallet",
+        "Balance": 279193.43,
+        "Currency": "EUR",
+        "Status": "Closed"
+      },
+      {
+        "Account_ID": 2,
+        "User_ID": 1,
+        "Account_Type": "Wallet",
+        "Balance": 273644.64,
+        "Currency": "USD",
+        "Status": "Closed"
+      },
+      {
+        "Account_ID": 3,
+        "User_ID": 2,
+        "Account_Type": "Savings",
+        "Balance": 244068.67,
+        "Currency": "INR",
+        "Status": "Closed"
+      }
+    ]
+  },
+  "merchants": {
+    "rows": 5000,
+    "cols": 5,
+    "columns": {
+      "Merchant_ID": "int16",
+      "Merchant_Name": "object",
+      "Category": "category",
+      "Country": "category",
+      "Risk_Rating": "category"
+    },
+    "null_pct": {
+      "Merchant_ID": 0.0,
+      "Merchant_Name": 0.0,
+      "Category": 0.0,
+      "Country": 0.0,
+      "Risk_Rating": 0.0
+    },
+    "sample": [
+      {
+        "Merchant_ID": 1,
+        "Merchant_Name": "Williams-Logan",
+        "Category": "Travel",
+        "Country": "Bermuda",
+        "Risk_Rating": "Low"
+      },
+      {
+        "Merchant_ID": 2,
+        "Merchant_Name": "Alexander-Leach",
+        "Category": "Gaming",
+        "Country": "Switzerland",
+        "Risk_Rating": "Low"
+      },
+      {
+        "Merchant_ID": 3,
+        "Merchant_Name": "Thompson-Armstrong",
+        "Category": "Gaming",
+        "Country": "Russian Federation",
+        "Risk_Rating": "Low"
+      }
+    ]
+  },
+  "fraud_alerts": {
+    "rows": 15000,
+    "cols": 7,
+    "columns": {
+      "Alert_ID": "int16",
+      "Transaction_ID": "int32",
+      "User_ID": "int16",
+      "Rule_Triggered": "category",
+      "Alert_Timestamp": "datetime64[ns, UTC]",
+      "Severity": "category",
+      "Action_Taken": "category"
+    },
+    "null_pct": {
+      "Alert_ID": 0.0,
+      "Transaction_ID": 0.0,
+      "User_ID": 0.0,
+      "Rule_Triggered": 0.0,
+      "Alert_Timestamp": 0.0,
+      "Severity": 0.0,
+      "Action_Taken": 0.0
+    },
+    "sample": [
+      {
+        "Alert_ID": 1,
+        "Transaction_ID": 126284,
+        "User_ID": 892,
+        "Rule_Triggered": "IPChange",
+        "Alert_Timestamp": "2024-08-06 19:36:03.548378+00:00",
+        "Severity": "Medium",
+        "Action_Taken": "Manual Review"
+      },
+      {
+        "Alert_ID": 2,
+        "Transaction_ID": 59797,
+        "User_ID": 7326,
+        "Rule_Triggered": "LocationMismatch",
+        "Alert_Timestamp": "2024-10-07 02:45:19.986626+00:00",
+        "Severity": "Low",
+        "Action_Taken": "Manual Review"
+      },
+      {
+        "Alert_ID": 3,
+        "Transaction_ID": 111486,
+        "User_ID": 4841,
+        "Rule_Triggered": "HighAmount",
+        "Alert_Timestamp": "2023-12-10 01:32:11.972874+00:00",
+        "Severity": "Low",
+        "Action_Taken": "Manual Review"
+      }
+    ]
+  },
+  "api_logs": {
+    "rows": 500000,
+    "cols": 7,
+    "columns": {
+      "Log_ID": "int32",
+      "Transaction_ID": "int32",
+      "API_Endpoint": "category",
+      "Request_Timestamp": "datetime64[ns, UTC]",
+      "Response_Timestamp": "datetime64[ns, UTC]",
+      "Response_Code": "int16",
+      "Latency_ms": "int16"
+    },
+    "null_pct": {
+      "Log_ID": 0.0,
+      "Transaction_ID": 0.0,
+      "API_Endpoint": 0.0,
+      "Request_Timestamp": 0.0,
+      "Response_Timestamp": 0.0,
+      "Response_Code": 0.0,
+      "Latency_ms": 0.0
+    },
+    "sample": [
+      {
+        "Log_ID": 1,
+        "Transaction_ID": 48612,
+        "API_Endpoint": "/initiate",
+        "Request_Timestamp": "2024-04-15 16:47:20.711739+00:00",
+        "Response_Timestamp": "2024-04-15 16:47:21.509739+00:00",
+        "Response_Code": 200,
+        "Latency_ms": 798
+      },
+      {
+        "Log_ID": 2,
+        "Transaction_ID": 34317,
+        "API_Endpoint": "/verify",
+        "Request_Timestamp": "2024-08-29 14:21:02.456829+00:00",
+        "Response_Timestamp": "2024-08-29 14:21:03.925829+00:00",
+        "Response_Code": 500,
+        "Latency_ms": 469
+      },
+      {
+        "Log_ID": 3,
+        "Transaction_ID": 83745,
+        "API_Endpoint": "/verify",
+        "Request_Timestamp": "2024-01-12 01:48:23.329814+00:00",
+        "Response_Timestamp": "2024-01-12 01:48:24.668814+00:00",
+        "Response_Code": 400,
+        "Latency_ms": 339
+      }
+    ]
+  }
+}
